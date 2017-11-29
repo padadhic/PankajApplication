@@ -4,33 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context="com.example.dadhichp.pankajapplication.MainActivity">
 
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="UserName"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="170dp" />
+    <RelativeLayout
+        android:layout_width="456dp"
+        android:layout_height="687dp">
 
-    <EditText
-        android:id="@+id/editText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="password"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="216dp" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="85dp"
+            android:layout_marginStart="172dp"
+            android:text="submit"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="269dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="submit"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="269dp" />
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="108dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="password"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="216dp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText6"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="UserName"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="170dp" />
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
